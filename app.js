@@ -17,8 +17,8 @@ app.get('/', async (req, res) => {
         await fs.writeFile(fileName, content, 'utf-8');
         
     }catch(err){
-       console.error('Shit is fucked:', error);
-        res.status(500).send('Fatal error! Computer is fucked!')
+       console.error('Internal Server Error:', error);
+        res.status(500).send('Server is no bueno!')
 
 
     }
